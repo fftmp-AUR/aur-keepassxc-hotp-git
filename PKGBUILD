@@ -10,11 +10,13 @@ license=(GPL)
 depends=(botan hicolor-icon-theme libxtst qrencode qt5-svg qt5-x11extras)
 makedepends=(git intltool cmake qt5-tools)
 source=('git+https://github.com/keepassxreboot/keepassxc.git#branch=develop'
-        'https://github.com/fftmp/keepassxc/commit/aa1e6f67d295fd062db57623657bfb004bd7bcda.patch')
-sha256sums=('SKIP' '5cb0e78b2f6ae1aea325bd3f29c0e1924e8ceba807514187a2d38765277b9f1e')
+        'https://github.com/fftmp/keepassxc/commit/07fe978b34e0ca8e809b1d967a7263e993741cb5.patch'
+        'https://github.com/fftmp/keepassxc/commit/4817d8c672164bc1fe022168e5b84d84ac06437b.patch')
+sha256sums=('SKIP' '1fbff34ebc2cade98b19f9efcf8510586fa1b48e95ba0d08d659c4e5637fb8d3' 'da2c1deb190a6892192defcc1aa5f3f6ae859d5b92f087fedd964140dbfc783c')
 
 prepare() {
-    patch --directory="keepassxc" -p1 --input='../aa1e6f67d295fd062db57623657bfb004bd7bcda.patch'
+    patch --directory="keepassxc" -p1 --input='../07fe978b34e0ca8e809b1d967a7263e993741cb5.patch'
+    patch --directory="keepassxc" -p1 --input='../4817d8c672164bc1fe022168e5b84d84ac06437b.patch'
 	mkdir -p build
 }
 
