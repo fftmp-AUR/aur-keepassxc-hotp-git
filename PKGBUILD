@@ -19,23 +19,23 @@ sha256sums=('SKIP' 'SKIP' 'SKIP')
 prepare() {
     patch --directory="keepassxc" -p1 --input='../p1.patch'
     patch --directory="keepassxc" -p1 --input='../p2.patch'
-	mkdir -p build
+    mkdir -p build
 }
 
 build() {
-	cd build
-	cmake ../keepassxc \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib \
+    cd build
+    cmake ../keepassxc \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
         -DWITH_TESTS=OFF \
         -DWITH_XC_UPDATECHECK=OFF \
         -DWITH_XC_DOCS=OFF \
         -DWITH_APP_BUNDLE=OFF
-	make
+    make
 }
 
 package() {
-	cd build
-	make DESTDIR="$pkgdir" install
+    cd build
+    make DESTDIR="$pkgdir" install
 }
