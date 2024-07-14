@@ -6,8 +6,8 @@ pkgrel=1
 pkgdesc="keepassXC git version with patch to support HOTP and without supplement features"
 arch=(x86_64)
 url="https://keepassxc.org/"
-license=(GPL)
-depends=(botan hicolor-icon-theme libxtst qrencode qt5-svg qt5-x11extras)
+license=('GPL-2.0-only OR GPL-3.0-only OR LGPL-2.1-only')
+depends=(botan hicolor-icon-theme libxtst minizip qrencode qt5-svg qt5-x11extras)
 makedepends=(git intltool cmake qt5-tools)
 patch_url='https://github.com/fftmp/keepassxc/commit/'
 source=('git+https://github.com/keepassxreboot/keepassxc.git#branch=develop'
