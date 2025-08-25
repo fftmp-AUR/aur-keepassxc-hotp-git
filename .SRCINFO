@@ -1,0 +1,28 @@
+pkgbase = keepassxc-hotp-git
+	pkgdesc = keepassXC git version with patch to support HOTP and without supplement features
+	pkgver = 2.7.10
+	pkgrel = 1
+	url = https://keepassxc.org/
+	arch = x86_64
+	license = GPL-2.0-only OR GPL-3.0-only OR LGPL-2.1-only
+	makedepends = git
+	makedepends = cmake
+	makedepends = ninja
+	makedepends = qt5-tools
+	depends = argon2
+	depends = botan
+	depends = hicolor-icon-theme
+	depends = libxtst
+	depends = minizip
+	depends = qrencode
+	depends = qt5-svg
+	depends = qt5-x11extras
+	provides = keepassxc
+	source = git+https://github.com/keepassxreboot/keepassxc.git#branch=develop
+	source = p1.patch::https://github.com/fftmp/keepassxc/commit//fb7b452573c40761ec6ac7eb727ecc5a6b05dabd.patch
+	source = p2.patch::https://github.com/fftmp/keepassxc/commit//71f19040484c52d2aaabdc6b7b459a0500a97273.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = keepassxc-hotp-git

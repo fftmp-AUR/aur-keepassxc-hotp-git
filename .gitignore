@@ -1,5 +1,5 @@
 src/
 pkg/
 keepassxc
-aa1e6f67d295fd062db57623657bfb004bd7bcda.patch
+*.patch
 *.pkg.tar.zst
