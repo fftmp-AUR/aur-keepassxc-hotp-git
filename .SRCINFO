@@ -1,7 +1,7 @@
 pkgbase = keepassxc-hotp-git
 	pkgdesc = keepassXC git version with patch to support HOTP and without supplement features
 	pkgver = 2.7.10
-	pkgrel = 1
+	pkgrel = 2
 	url = https://keepassxc.org/
 	arch = x86_64
 	license = GPL-2.0-only OR GPL-3.0-only OR LGPL-2.1-only
@@ -19,8 +19,8 @@ pkgbase = keepassxc-hotp-git
 	depends = qt5-x11extras
 	provides = keepassxc
 	source = git+https://github.com/keepassxreboot/keepassxc.git#branch=develop
-	source = p1.patch::https://github.com/fftmp/keepassxc/commit//fb7b452573c40761ec6ac7eb727ecc5a6b05dabd.patch
-	source = p2.patch::https://github.com/fftmp/keepassxc/commit//71f19040484c52d2aaabdc6b7b459a0500a97273.patch
+	source = p1.patch::https://github.com/fftmp/keepassxc/commit//95570da2aa37902bd3790ff00bbe93bc41ff08f6.patch
+	source = p2.patch::https://github.com/fftmp/keepassxc/commit//866174d2f6f87f3c2b5479b8c60f6c1c026de440.patch
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP

@@ -2,7 +2,7 @@
 
 pkgname=keepassxc-hotp-git
 pkgver=2.7.10
-pkgrel=1
+pkgrel=2
 pkgdesc='keepassXC git version with patch to support HOTP and without supplement features'
 arch=(x86_64)
 url='https://keepassxc.org/'
@@ -11,8 +11,8 @@ depends=(argon2 botan hicolor-icon-theme libxtst minizip qrencode qt5-svg qt5-x1
 makedepends=(git cmake ninja qt5-tools)
 patch_url='https://github.com/fftmp/keepassxc/commit/'
 source=('git+https://github.com/keepassxreboot/keepassxc.git#branch=develop'
-        "p1.patch::${patch_url}/fb7b452573c40761ec6ac7eb727ecc5a6b05dabd.patch"
-        "p2.patch::${patch_url}/71f19040484c52d2aaabdc6b7b459a0500a97273.patch"
+        "p1.patch::${patch_url}/95570da2aa37902bd3790ff00bbe93bc41ff08f6.patch"
+        "p2.patch::${patch_url}/866174d2f6f87f3c2b5479b8c60f6c1c026de440.patch"
         )
 sha256sums=('SKIP' 'SKIP' 'SKIP')
 
